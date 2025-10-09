@@ -16,12 +16,30 @@
                     <img src="./logo.gif" alt="Cyworld Logo">
                 </a>
             </div>
-            <nav class="main-navigation">
-                <a href="./mhsection/mh_index.asp"><img name="42daymn01" src="./mn01_0.gif" alt="미니홈피"></a>
-                <a href="./clubSection4_main.asp"><img name="42daymn02" src="./mn02_0.gif" alt="클럽"></a>
-                <a href="./psect_index.asp"><img name="42daymn03" src="./mn03_0.gif" alt="페이퍼"></a>
-                <a href="./mall5_index.asp"><img name="42daymn04" src="./mn04_0_photo.gif" alt="선물가게"></a>
-            </nav>
+            <div style="width: 330px;">
+                <div style="display: flex; list-style: none; padding: 0; margin: 0;">
+                    <div style="width: 79px;">
+                        <a href="./mhsection/mh_index.asp" style="display: block;">
+                            <img name="42daymn01" border="0" src="./mn01_0.gif" width="79" height="50" alt="미니홈피 메뉴">
+                        </a>
+                    </div>
+                    <div style="width: 79px;">
+                        <a href="./clubSection4_main.asp" style="display: block;">
+                            <img name="42daymn02" border="0" src="./mn02_0.gif" width="79" height="50" alt="클럽 메뉴">
+                        </a>
+                    </div>
+                    <div style="width: 79px;">
+                        <a href="./psect_index.asp" style="display: block;">
+                            <img name="42daymn03" border="0" src="./mn03_0.gif" width="79" height="50" alt="페이퍼">
+                        </a>
+                    </div>
+                    <div style="width: 79px;">
+                        <a href="./mall5_index.asp" style="display: block;">
+                            <img name="42daymn04" border="0" src="./mn04_0_photo.gif" width="79" height="50" alt="선물가게">
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="top-links">
                 <img src="./link.gif" usemap="#link" alt="부가 메뉴 링크">
             </div>
@@ -49,49 +67,82 @@
                     </a>
                 </div>
 
-                <div class="login-box">
-                    <form name="login" action="./login.jsp" target="_top" method="post" autocomplete="off" onsubmit="return form_chk();">
-                        <div class="login-title"><img src="./login_title_pre.gif" alt="로그인"></div>
-                        
-                        <div class="login-inputs">
-                            <div class="input-group">
-                                <label for="email"><img src="./login_email.gif" alt="이메일"></label>
-                                <input type="text" id="email" name="email" class="input2">
+                <div class="login-wrapper"
+                    style="width:218px; background:#fff; text-align:center; padding-bottom:20px;">
+                    <form name="login" action="./login.jsp" target="_top" method="post" autocomplete="off"
+                        onsubmit="return form_chk();">
+                        <br style="line-height:5px;">
+                        <img src="./login_title_pre.gif" width="218" height="17"><br>
+                        <img src="./no(1).gif" width="1" height="20"><br>
+                        <div class="login-box" style="width:186px; margin:0 auto; display:flex;">
+                            <div class="login-fields" style="display:flex; flex-direction:column; gap:4px;">
+                                <div class="login-row" style="display:flex; align-items:center;">
+                                    <img src="./login_email.gif" width="42" height="18" style="margin-right:4px;">
+                                    <input type="text" name="email" style="width:90px; border:1px solid #999;"
+                                        class="input2">
+                                </div>
+                                <div class="login-row" style="display:flex; align-items:center;">
+                                    <img src="./login_pw.gif" width="42" height="18" style="margin-right:4px;">
+                                    <input type="password" name="passwd" style="width:90px; border:1px solid #999;"
+                                        class="input2">
+                                </div>
                             </div>
-                            <div class="input-group">
-                                <label for="passwd"><img src="./login_pw.gif" alt="비밀번호"></label>
-                                <input type="password" id="passwd" name="passwd" class="input2">
+
+                            <div class="login-button" style="margin-left:4px; display:flex; align-items:center;">
+                                <input type="image" src="./login_button.gif" width="51" height="38" border="0"
+                                    tabindex="-1">
                             </div>
-                            <input type="image" src="./login_button.gif" class="login-button" alt="로그인 버튼">
                         </div>
 
-                        <div class="login-options">
-                            <input type="checkbox" name="echk" value="on">
-                            <img src="./login_save_email.gif" alt="이메일 저장" style="vertical-align: middle;">
-                            <input type="checkbox" name="safechk" value="on">
-                            <img src="./login_safety.gif" alt="보안접속" style="vertical-align: middle;">
+                        <img src="./no.gif" width="1" height="5"><br>
+
+                        <div class="login-options"
+                            style="width:186px; margin:0 auto; text-align:left; padding-left:42px;">
+                            <label style="margin-right:8px;">
+                                <input type="checkbox" name="echk" value="on" style="width:13px; height:15px;">
+                                <img src="./login_save_email.gif" width="50" height="11" align="absmiddle">
+                            </label>
+                            <label>
+                                <input type="checkbox" name="safechk" value="on" style="width:13px; height:15px;">
+                                <img src="./login_safety.gif" width="40" height="11" align="absmiddle">
+                            </label>
                         </div>
 
-                        <div class="login-links-container">
-                            <div class="login-links">
-                                <a href="./id_main.asp"><img src="./login_search_empw.gif" alt="아이디/비밀번호 찾기"></a>
-                                <a href="./register.asp"><img src="/login_join.gif" alt="회원가입"></a>
-                            </div>
+                        <img src="./no.gif" width="1" height="15"><br>
+                        <img src="./login_back01.gif" width="186" height="2"><br>
+
+                        <div class="login-links"
+                            style="width:186px; background:#F5F5F5; padding:10px 0; text-align:left; padding-left:30px;">
+                            <a href="./id_main.asp">
+                                <img src="./login_search_empw.gif" width="113" height="10" border="0">
+                            </a>
+                            <br><img src="./no.gif" width="1" height="5"><br>
+                            <a href="./register.asp">
+                                <img src="/login_join.gif" width="78" height="10" border="0">
+                            </a>
                         </div>
+
+                        <img src="./login_back02.gif" width="186" height="2">
                     </form>
                 </div>
-                
+
+
                 <div class="sidebar-banner-bottom">
-                    <iframe width="200" height="50" scrolling="no" frameborder="0" src="./event_banner.html" data-ruffle-polyfilled=""></iframe>
+                    <iframe width="200" height="50" scrolling="no" frameborder="0" src="./event_banner.html"
+                        data-ruffle-polyfilled=""></iframe>
                 </div>
-                
+
                 <div class="service-preview">
                     <h4><img src="./42day_intro_txt01.gif" alt="서비스 미리보기"></h4>
                     <div class="preview-icons">
-                        <a href="./preview_cyworld.asp"><img id="sv01" src="./42day_intro_sv01_0.gif" alt="싸이월드" style="filter:blendTrans(duration=0.3)"></a>
-                        <a href="./help_02.asp"><img id="sv02" src="./42day_intro_sv02_0.gif" alt="미니홈피" style="filter:blendTrans(duration=0.3)"></a>
-                        <a href="./categoryList.asp"><img id="sv03" src="./42day_intro_sv03_0.gif" alt="미니룸" style="filter:blendTrans(duration=0.3)"></a>
-                        <a href="./help_03.asp"><img id="sv04" src="./42day_intro_sv04_0.gif" alt="클럽" style="filter:blendTrans(duration=0.3)"></a>
+                        <a href="./preview_cyworld.asp"><img id="sv01" src="./42day_intro_sv01_0.gif" alt="싸이월드"
+                                style="filter:blendTrans(duration=0.3)"></a>
+                        <a href="./help_02.asp"><img id="sv02" src="./42day_intro_sv02_0.gif" alt="미니홈피"
+                                style="filter:blendTrans(duration=0.3)"></a>
+                        <a href="./categoryList.asp"><img id="sv03" src="./42day_intro_sv03_0.gif" alt="미니룸"
+                                style="filter:blendTrans(duration=0.3)"></a>
+                        <a href="./help_03.asp"><img id="sv04" src="./42day_intro_sv04_0.gif" alt="클럽"
+                                style="filter:blendTrans(duration=0.3)"></a>
                     </div>
                 </div>
 
@@ -105,16 +156,16 @@
                     <a href="./dotori_event.asp" target="_blank"><img src="./ban_freedoto2.gif" alt="무료 도토리 충전소"></a>
                 </div>
             </aside>
-            
+
             <div id="main-content">
-                
+
                 <section class="cover-story">
                     <div class="cover-image">
                         <img id="autoImage" src="./1.jpg" alt="커버 이미지">
                         <script>
                             const images = ["./1.jpg", "./2.jpg", "./3.jpg"];
                             let idx = 0;
-                            setInterval(function() {
+                            setInterval(function () {
                                 idx = (idx + 1) % images.length;
                                 document.getElementById("autoImage").src = images[idx];
                             }, 5000);
@@ -138,13 +189,26 @@
                 <section class="search-box">
                     <div class="search-form-area">
                         <div class="search-form">
-                            <select name="w" id="w"><option value="all" selected>전체검색</option><option value="all_img">이미지</option><option value="all_bbs">게시글</option><option value="all_minihp">미니홈피</option><option value="all_club">클럽</option><option value="all_paper">페이퍼</option><option value="all_music">음악</option><option value="all_gift">선물아이템</option></select>
-                            <input name="query" id="query" type="text" value="" onclick="erase_back();" onkeydown="erase_back();searchEnter();" onfocus="erase_back();">
-                            <img src="./button_search.gif" alt="검색" style="cursor:pointer;" onclick="javascript:search()">
-                            <input name="memoChkbox" id="memoChkbox" type="checkbox" onfocus="this.blur()" onclick="toggle_CookieVal();">
-                            <img src="./search_setting.gif" alt="검색 설정" onmouseout="showHelpDiv('1','0')" onmouseover="showHelpDiv('1','1')">
+                            <select name="w" id="w">
+                                <option value="all" selected>전체검색</option>
+                                <option value="all_img">이미지</option>
+                                <option value="all_bbs">게시글</option>
+                                <option value="all_minihp">미니홈피</option>
+                                <option value="all_club">클럽</option>
+                                <option value="all_paper">페이퍼</option>
+                                <option value="all_music">음악</option>
+                                <option value="all_gift">선물아이템</option>
+                            </select>
+                            <input name="query" id="query" type="text" value="" onclick="erase_back();"
+                                onkeydown="erase_back();searchEnter();" onfocus="erase_back();">
+                            <img src="./button_search.gif" alt="검색" style="cursor:pointer;"
+                                onclick="javascript:search()">
+                            <input name="memoChkbox" id="memoChkbox" type="checkbox" onfocus="this.blur()"
+                                onclick="toggle_CookieVal();">
+                            <img src="./search_setting.gif" alt="검색 설정" onmouseout="showHelpDiv('1','0')"
+                                onmouseover="showHelpDiv('1','1')">
                         </div>
-                         <div class="search-keywords">
+                        <div class="search-keywords">
                             <div class="popular-keywords">
                                 <b><span style="color:#9A7C5B;">인기!</span></b>
                                 <a href="./csearch.asp"><span>박지성</span></a>
@@ -155,17 +219,17 @@
                                 <span class="separator">|</span>
                                 <a href="./csearch.asp"><span>친절한 금자씨</span></a>
                             </div>
-                             <div class="event-keywords">
-                                 <b><span style="color:#9A7C5B;">이벤트</span></b>
-                                 <a href="./musicfestival.asp"><span>국내뮤지션 총출동!</span></a>
-                             </div>
+                            <div class="event-keywords">
+                                <b><span style="color:#9A7C5B;">이벤트</span></b>
+                                <a href="./musicfestival.asp"><span>국내뮤지션 총출동!</span></a>
+                            </div>
                         </div>
                     </div>
                     <div class="search-banner">
-                         <a href="./싸이월드_프로젝트.html"><img src="./search_cycf2.gif" alt="검색창 배너"></a>
+                        <a href="./싸이월드_프로젝트.html"><img src="./search_cycf2.gif" alt="검색창 배너"></a>
                     </div>
                 </section>
-                
+
                 <div class="content-board">
                     <div class="content-left">
                         <section class="board-section">
@@ -190,7 +254,7 @@
                         </section>
 
                         <section class="minihompy-section">
-                             <header><a href="..."><img src="./title42_minihompy.gif" alt="오늘의 미니홈피"></a></header>
+                            <header><a href="..."><img src="./title42_minihompy.gif" alt="오늘의 미니홈피"></a></header>
                             <div class="minihompy-list">
                                 <div class="minihompy-item">
                                     <a href="..."><img src="./26145182.jpg" class="profile-pic" alt="우진이 프로필"></a>
@@ -210,7 +274,7 @@
                                 </div>
                             </div>
                         </section>
-                        
+
                         <section class="club-section">
                             <header><a href="..."><img src="./title42_club.gif" alt="추천 클럽"></a></header>
                             <div class="club-item">
@@ -222,7 +286,7 @@
                                 </div>
                             </div>
                         </section>
-                        
+
                         <section class="paper-section">
                             <header><a href="..."><img src="./title42_paper.gif" alt="추천 페이퍼"></a></header>
                             <div class="paper-list">
@@ -244,32 +308,41 @@
                                 </div>
                             </div>
                         </section>
-                        
+
                         <div class="news-focus">
                             <b>시선집중!</b>
                             <a href="..." target="paper_win"><b>개 빡대가리! 유익은 인생 망함ㅋㅋㅋㅋ</b><br>- 뉴스! -</a>
                         </div>
-                        
+
                         <section class="themetown-section">
-                             <header><a href="..."><img src="./title42_themetown.gif" alt="테마타운"></a></header>
+                            <header><a href="..."><img src="./title42_themetown.gif" alt="테마타운"></a></header>
                             <div class="themetown-item">
                                 <a href="..."><img src="./Ʈ(0).jpg" alt="테마타운 썸네일"></a>
                                 <div class="themetown-info">
                                     <b><a href="...">더운 여름 유쾌한 데이트!</a></b>
-                                    <a href="..."><p>분위기있는 곳에서의 맛있는 음식과 재미있는 공연 어떠세요?</p></a>
+                                    <a href="...">
+                                        <p>분위기있는 곳에서의 맛있는 음식과 재미있는 공연 어떠세요?</p>
+                                    </a>
                                 </div>
                             </div>
                             <div class="themetown-links">
-                                <p><img src="https://web.archive.org/web/20050802233827im_/http://img.cyworld.nate.com/img/ico/icon_minihpy_brand.gif" alt=""> <a href="javascript:showmyhome('70001127');">갈갈이 패밀리님의 미니홈피</a> - <a href="javascript:PZPopup('70001127');">갈갈이 패밀리</a></p>
-                                <p><img src="https://web.archive.org/web/20050802233827im_/http://img.cyworld.nate.com/img/ico/icon_minihpy_brand.gif" alt=""> <a href="javascript:showmyhome('70001384');">립앤님의 미니홈피</a> - <a href="javascript:PZPopup('70001384');">립앤</a></p>
-                                <p><img src="https://web.archive.org/web/20050802233827im_/http://img.cyworld.nate.com/img/ico/icon_minihpy_brand.gif" alt=""> <a href="javascript:showmyhome('70001388');">피플세이 님의 미니홈피</a> - <a href="javascript:PZPopup('70001388');">피플세이 </a></p>
+                                <p><img src="https://web.archive.org/web/20050802233827im_/http://img.cyworld.nate.com/img/ico/icon_minihpy_brand.gif"
+                                        alt=""> <a href="javascript:showmyhome('70001127');">갈갈이 패밀리님의 미니홈피</a> - <a
+                                        href="javascript:PZPopup('70001127');">갈갈이 패밀리</a></p>
+                                <p><img src="https://web.archive.org/web/20050802233827im_/http://img.cyworld.nate.com/img/ico/icon_minihpy_brand.gif"
+                                        alt=""> <a href="javascript:showmyhome('70001384');">립앤님의 미니홈피</a> - <a
+                                        href="javascript:PZPopup('70001384');">립앤</a></p>
+                                <p><img src="https://web.archive.org/web/20050802233827im_/http://img.cyworld.nate.com/img/ico/icon_minihpy_brand.gif"
+                                        alt=""> <a href="javascript:showmyhome('70001388');">피플세이 님의 미니홈피</a> - <a
+                                        href="javascript:PZPopup('70001388');">피플세이 </a></p>
                             </div>
                         </section>
                     </div>
 
                     <aside class="content-right">
                         <div class="side-banner">
-                             <iframe src="./epikhigh.jpg" frameborder="0" scrolling="no" width="279" height="120" data-ruffle-polyfilled=""></iframe>
+                            <iframe src="./epikhigh.jpg" frameborder="0" scrolling="no" width="279" height="120"
+                                data-ruffle-polyfilled=""></iframe>
                         </div>
 
                         <section class="content-box gift-shop">
@@ -278,13 +351,17 @@
                                 <div class="gift-items">
                                     <div class="gift-item">
                                         <a href="..."><img src="./42daybar_best.gif" alt="베스트 아이템"></a>
-                                        <div class="item-preview"><a href="..."><img src="./color(175).gif" alt="선물 아이템"></a></div>
-                                        <a href="..." class="item-name">잘가요(정재욱)</a><p>도토리 5개</p>
+                                        <div class="item-preview"><a href="..."><img src="./color(175).gif"
+                                                    alt="선물 아이템"></a></div>
+                                        <a href="..." class="item-name">잘가요(정재욱)</a>
+                                        <p>도토리 5개</p>
                                     </div>
                                     <div class="gift-item">
                                         <a href="..."><img src="./42daybar_new.gif" alt="새로운 아이템"></a>
-                                        <div class="item-preview"><a href="..."><img src="dens55_color.gif" alt="선물 아이템"></a></div>
-                                        <a href="..." class="item-name">에픽하이(원)</a><p>도토리 10개</p>
+                                        <div class="item-preview"><a href="..."><img src="dens55_color.gif"
+                                                    alt="선물 아이템"></a></div>
+                                        <a href="..." class="item-name">에픽하이(원)</a>
+                                        <p>도토리 10개</p>
                                     </div>
                                 </div>
                                 <hr class="dotted-divider-bold">
@@ -295,7 +372,8 @@
                             <header><a href="..."><img src="./title42_event.gif" alt="이벤트"></a></header>
                             <div class="content-box-body">
                                 <div class="event-list">
-                                    <iframe width="240" height="69" scrolling="no" frameborder="0" src="..." data-ruffle-polyfilled=""></iframe>
+                                    <iframe width="240" height="69" scrolling="no" frameborder="0" src="..."
+                                        data-ruffle-polyfilled=""></iframe>
                                 </div>
                             </div>
                         </section>
@@ -326,4 +404,5 @@
         </footer>
     </div>
 </body>
+
 </html>
